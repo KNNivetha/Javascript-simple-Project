@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Converter</title>
+</head>
+<body>
+    <h1>Cm to inches</h1>
+    <div>
+    <input type="number" id="input" name="input" placeholder="Enter a number"><br><br>
+</div>
+<div>
+    <button type="submit" onclick="convert()" name="btn">Convert to inches</button>
+    </div>
+    <div id="result">
+
+    </div>
+    <script>
+        function convert(){
+            let cm=Number(document.getElementById("input").value);
+            let inches=cm/2.54;
+            //celcius to fahrenheit formula (number*9/5)+32         
+              let result=document.getElementById("result").innerHTML=inches.toFixed(3)+"inches"
+
+        }
+    </script>
+
+</body>
+</html>
